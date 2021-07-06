@@ -24,10 +24,10 @@ void LookAndFeel::drawRotarySlider(juce::Graphics & g,
     
     auto bounds = Rectangle<float>(x, y, width, height);
     
-    g.setColour(Colour(97u, 18u, 167u));
+    g.setColour(Colour(61u, 59u, 101u)); // my colours - dial background colour
     g.fillEllipse(bounds);
     
-    g.setColour(Colour(255u, 154u, 1u));
+    g.setColour(Colour(188u, 157u, 116u)); //my colours - dial boundary colour
     g.drawEllipse(bounds, 1.f);
     
     if( auto* rswl = dynamic_cast<RotarySliderWithLabels*>(&slider))
@@ -58,10 +58,10 @@ void LookAndFeel::drawRotarySlider(juce::Graphics & g,
         r.setSize(strWidth + 4, rswl->getTextHeight() + 2);
         r.setCentre(bounds.getCentre());
         
-        g.setColour(Colours::black);
+        g.setColour(Colour(55u, 53u, 91u)); // value text box colour background. This is my colour. changed from g.setColour(Colours::black);
         g.fillRect(r);
         
-        g.setColour(Colours::white);
+        g.setColour(Colour(242u, 242u, 243u)); // value text box text colour. this is my colour. changed from g.setColour(Colours::white);
         g.drawFittedText(text, r.toNearestInt(), juce::Justification::centred, 1);
     }
     
@@ -96,7 +96,7 @@ void RotarySliderWithLabels::paint(juce::Graphics &g)
     auto center = sliderBounds.toFloat().getCentre();
     auto radius = sliderBounds.getWidth() * 0.5f;
     
-    g.setColour(Colour(0u, 172u, 1u));
+    g.setColour(Colour(145u, 163u, 156u)); // label colour...used my colour....
     g.setFont(getTextHeight());
     
     auto numChoices = labels.size();
