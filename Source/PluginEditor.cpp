@@ -96,7 +96,7 @@ void RotarySliderWithLabels::paint(juce::Graphics &g)
     auto center = sliderBounds.toFloat().getCentre();
     auto radius = sliderBounds.getWidth() * 0.5f;
     
-    g.setColour(Colour(145u, 163u, 156u)); // label colour...used my colour....
+    g.setColour(Colour(227u, 85u, 43u)); // label colour...used my colour....
     g.setFont(getTextHeight());
     
     auto numChoices = labels.size();
