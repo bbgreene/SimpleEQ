@@ -28,7 +28,7 @@ void LookAndFeel::drawRotarySlider(juce::Graphics & g,
     g.fillEllipse(bounds);
     
     g.setColour(Colour(188u, 157u, 116u)); //my colours - dial boundary colour
-    g.drawEllipse(bounds, 1.f);
+    g.drawEllipse(bounds, 2.f); // changed line width from 1 to 2
     
     if( auto* rswl = dynamic_cast<RotarySliderWithLabels*>(&slider))
     {
