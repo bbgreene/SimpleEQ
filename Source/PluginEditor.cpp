@@ -494,7 +494,7 @@ void SimpleEQAudioProcessorEditor::paint (juce::Graphics& g)
 {
     using namespace juce;
     // (Our component is opaque, so we must completely fill the background with a solid colour)
-    g.fillAll (Colours::black);
+    g.fillAll (Colours::black); 
 }
 
 void SimpleEQAudioProcessorEditor::resized()
